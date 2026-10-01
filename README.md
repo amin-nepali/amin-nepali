@@ -2,7 +2,7 @@
 
 # Hi, I'm Amin Nepali 👋
 
-### Full-Stack Developer | Python & Django Enthusiast
+### Full-Stack Developer | Python & Django Enthusiast | Vibe coder
 
 I build practical web experiences and enjoy turning problems into clean, maintainable software.
 
@@ -22,8 +22,8 @@ I build practical web experiences and enjoy turning problems into clean, maintai
 
 ## About Me
 
-- 🎓 Studying at Sukuna Multiple Campus, Sundarharaincha, Morang
-- 💡 Interested in problem-solving, web development, OOP, and networking
+- 🎓 Studied at Sukuna Multiple Campus, Sundarharaincha, Morang
+- 💡 Interested in problem-solving, web-apps development, OOP, and networking
 - 🌱 Currently learning and building with Python and Django
 - 🤝 Open to web development opportunities and meaningful collaborations
 
@@ -31,6 +31,13 @@ I build practical web experiences and enjoy turning problems into clean, maintai
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=amin-nepali&theme=github_dark" alt="Amin's GitHub contribution activity">
+</div>
+
+## GitHub Activity
+
+<div align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=amin-nepali&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" alt="Amin's GitHub statistics">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amin-nepali&layout=compact&hide_border=true&theme=transparent" alt="Amin's most used languages">
 </div>
 
 
@@ -81,9 +88,6 @@ I build practical web experiences and enjoy turning problems into clean, maintai
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amin-nepali&layout=compact&hide_border=true&theme=transparent" alt="Amin's most used languages">
 </div>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=amin-nepali&hide_border=true&area=true&theme=github-compact" alt="Amin's GitHub activity graph">
-</div>
 
 <div align="center">
   <i>Thanks for visiting my profile.</i>
