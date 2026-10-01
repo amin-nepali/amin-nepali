@@ -27,6 +27,12 @@ I build practical web experiences and enjoy turning problems into clean, maintai
 - 🌱 Currently learning and building with Python and Django
 - 🤝 Open to web development opportunities and meaningful collaborations
 
+## Contribution Activity
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/1f9d55/amin-nepali" alt="Amin's GitHub contribution calendar">
+</div>
+
 ## Featured Projects
 
 | Project | Description |
