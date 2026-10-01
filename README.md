@@ -33,9 +33,6 @@ I build practical web experiences and enjoy turning problems into clean, maintai
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=amin-nepali&theme=github_dark" alt="Amin's GitHub contribution activity">
 </div>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=amin-nepali&bg_color=0d1117&color=c08457&line=39d353&point=39d353&area_color=5b3a29&hide_border=true&custom_title=Contribution%20Activity" alt="Amin's dark contribution activity graph">
-</div>
 
 ## Featured Projects
 
