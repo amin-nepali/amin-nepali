@@ -2486,21 +2486,22 @@ button:focus-visible {
 }
 
 .has-motion .certification-card:nth-child(2),
-.has-motion .project-card:nth-child(2),
-.has-motion .project-card:nth-child(3),
-.has-motion .project-card:nth-child(4),
 .has-motion .skill-group:nth-child(even),
 .has-motion .resource-card:nth-child(even) {
   transition-delay: 90ms;
 }
 
-.has-motion .project-card:nth-child(3),
 .has-motion .skill-group:nth-child(3) {
   transition-delay: 150ms;
 }
 
-.has-motion .project-card:nth-child(4) {
-  transition-delay: 210ms;
+.project-card.reveal {
+  transition:
+    opacity 560ms ease,
+    translate 560ms cubic-bezier(0.2, 0.75, 0.25, 1),
+    transform 280ms cubic-bezier(0.2, 0.75, 0.25, 1),
+    border-color 220ms ease,
+    box-shadow 220ms ease;
 }
 
 .has-motion .skill-group.is-visible .skill-list span {
@@ -2599,7 +2600,8 @@ button:focus-visible {
   }
 
   .project-visual {
-    min-height: 180px;
+    min-height: 150px;
+    flex-basis: 150px;
   }
 
   .skills-section {
@@ -2754,15 +2756,16 @@ button:focus-visible {
 
   .project-grid {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 13px;
   }
 
   .project-visual {
-    min-height: 210px;
+    min-height: 160px;
+    flex-basis: 160px;
   }
 
   .project-content {
-    padding: 19px 17px 15px;
+    padding: 15px 15px 12px;
   }
 
   .project-content > p {
