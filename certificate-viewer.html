@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f5f5f0">
+    <meta name="theme-color" content="#080b10">
     <meta
       name="description"
       content="View certificate in a secure, read-only format."
@@ -12,13 +12,13 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <style>
       :root {
-        color-scheme: light;
-        --paper: #f5f5f0;
-        --ink: #19231f;
-        --line: #dce0d6;
-        --green: #c8f169;
-        --green-deep: #8fae45;
-        --muted: #69716a;
+        color-scheme: dark;
+        --paper: #080b10;
+        --ink: #edf2f8;
+        --line: #252d39;
+        --green: #c3f76a;
+        --green-deep: #90c34a;
+        --muted: #929cac;
       }
 
       * {
@@ -28,9 +28,11 @@
       html, body {
         margin: 0;
         min-height: 100%;
-        background: #f2f3ed;
+        background:
+          radial-gradient(ellipse at 50% 0%, rgb(195 247 106 / 7%), transparent 38%),
+          var(--paper);
         color: var(--ink);
-        font-family: "Segoe UI", sans-serif;
+        font-family: "Segoe UI", Inter, sans-serif;
       }
 
       body {
@@ -71,8 +73,8 @@
         position: relative;
         overflow: hidden;
         border: 1px solid var(--line);
-        background: #fcfcf9;
-        box-shadow: 0 20px 50px rgb(25 35 31 / 8%);
+        background: #0d121a;
+        box-shadow: 0 24px 80px rgb(0 0 0 / 42%);
       }
 
       .cert-image-wrap {
@@ -82,10 +84,10 @@
         padding: 18px;
         background: repeating-linear-gradient(
           0deg,
-          rgb(255 255 255 / 0.75),
-          rgb(255 255 255 / 0.75) 2px,
-          rgb(243 245 239 / 0.75) 2px,
-          rgb(243 245 239 / 0.75) 4px
+          rgb(255 255 255 / 0.025),
+          rgb(255 255 255 / 0.025) 1px,
+          transparent 1px,
+          transparent 4px
         );
       }
 
@@ -94,9 +96,9 @@
         width: min(100%, 920px);
         max-height: 80vh;
         object-fit: contain;
-        border: 1px solid #e0e4db;
-        background: white;
-        box-shadow: 0 14px 36px rgb(25 35 31 / 8%);
+        border: 1px solid #343c48;
+        background: #fff;
+        box-shadow: 0 14px 36px rgb(0 0 0 / 35%);
         pointer-events: none;
         user-drag: none;
         -webkit-user-drag: none;
@@ -110,7 +112,7 @@
         font-size: clamp(40px, 8vw, 140px);
         font-weight: 800;
         letter-spacing: 0.11em;
-        color: rgb(25 35 31 / 6%);
+        color: rgb(8 11 16 / 18%);
         text-transform: uppercase;
         pointer-events: none;
         transform: rotate(-28deg);
@@ -126,11 +128,38 @@
       .viewer-badge {
         padding: 9px 12px;
         border: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.7);
+        background: #0d121a;
         color: var(--muted);
         font-size: 10px;
         letter-spacing: 0.08em;
         text-transform: uppercase;
+      }
+
+      .viewer-shell {
+        animation: viewer-enter 700ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+      }
+
+      .viewer-header a {
+        color: var(--green);
+        transition: color 180ms ease;
+      }
+
+      .viewer-header a:hover {
+        color: #e0ffad;
+      }
+
+      @keyframes viewer-enter {
+        from { opacity: 0; transform: translateY(16px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
       }
 
       @media (max-width: 640px) {
