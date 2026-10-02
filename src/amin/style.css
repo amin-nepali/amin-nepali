@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body,
+.wallpaper {
+  background: #050816;
+}
+
+.wallpaper {
+  position: relative;
+  isolation: isolate;
+}
+
+.wallpaper .fluid-cursor {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wallpaper .fluid-cursor canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: crosshair;
+}
