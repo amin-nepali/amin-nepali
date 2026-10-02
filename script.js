@@ -38,7 +38,7 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 
 if (!prefersReducedMotion && "IntersectionObserver" in window) {
   const revealTargets = document.querySelectorAll(
-    ".hero-art, .certification-card, .project-card, .resource-card, .about-copy, .about-details, .contact-section"
+    ".hero-art, .certification-card, .project-card, .skill-group, .resource-card, .about-copy, .about-details, .contact-section"
   );
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {

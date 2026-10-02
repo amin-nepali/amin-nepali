@@ -52,8 +52,34 @@ I build practical web experiences and enjoy turning problems into clean, maintai
 ## Tech Stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=python,django,html,css,js,mysql,java,cpp" alt="Python, Django, HTML, CSS, JavaScript, MySQL, Java, and C++">
+  <img src="https://skillicons.dev/icons?i=python,django,html,css,tailwindcss,js,mysql,java,cpp" alt="Python, Django, HTML, CSS, Tailwind CSS, JavaScript, MySQL, Java, and C++">
 </p>
+
+## Skills
+
+### Python & Django
+
+- Python fundamentals, data structures, functions, and object-oriented programming
+- Inheritance, polymorphism, decorators, and generators
+- NumPy and Pandas fundamentals
+- Django MVT architecture, ORM, authentication, forms, and admin
+- REST API development and web application deployment
+
+### Frontend Development
+
+- HTML5, semantic markup, CSS3, and responsive web design
+- CSS Flexbox, Grid, and Tailwind CSS
+- JavaScript, ES6+, and DOM manipulation
+- Asynchronous JavaScript, callbacks, and Promises
+- cPanel web hosting and website deployment
+
+### Networking & Automation
+
+- IPv4, IPv6, subnetting, VLANs, and STP
+- OSPF, NAT, DHCP, ACLs, SSH, and wireless networking
+- Router and switch configuration with Cisco Packet Tracer
+- Port Security, DHCP Snooping, and network troubleshooting
+- REST API-based network automation, Python, Ansible, and Cisco DNA Center
 
 ## Tools
 
@@ -91,4 +117,3 @@ I build practical web experiences and enjoy turning problems into clean, maintai
 <div align="center">
   <i>Thanks for visiting my profile.</i>
 </div>
-
