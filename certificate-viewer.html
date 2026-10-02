@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f5f0">
+    <meta
+      name="description"
+      content="View certificate in a secure, read-only format."
+    >
+    <title>Certificate Viewer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f5f5f0;
+        --ink: #19231f;
+        --line: #dce0d6;
+        --green: #c8f169;
+        --green-deep: #8fae45;
+        --muted: #69716a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        background: #f2f3ed;
+        color: var(--ink);
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        padding: 32px 20px;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+
+      .viewer-shell {
+        width: min(1100px, 100%);
+      }
+
+      .viewer-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+        padding: 0 4px;
+      }
+
+      .viewer-header h1 {
+        margin: 0;
+        font-size: clamp(20px, 2vw, 28px);
+        letter-spacing: -0.05em;
+      }
+
+      .viewer-header a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .viewer-stage {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: #fcfcf9;
+        box-shadow: 0 20px 50px rgb(25 35 31 / 8%);
+      }
+
+      .cert-image-wrap {
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 18px;
+        background: repeating-linear-gradient(
+          0deg,
+          rgb(255 255 255 / 0.75),
+          rgb(255 255 255 / 0.75) 2px,
+          rgb(243 245 239 / 0.75) 2px,
+          rgb(243 245 239 / 0.75) 4px
+        );
+      }
+
+      .cert-image {
+        display: block;
+        width: min(100%, 920px);
+        max-height: 80vh;
+        object-fit: contain;
+        border: 1px solid #e0e4db;
+        background: white;
+        box-shadow: 0 14px 36px rgb(25 35 31 / 8%);
+        pointer-events: none;
+        user-drag: none;
+        -webkit-user-drag: none;
+      }
+
+      .watermark {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        font-size: clamp(40px, 8vw, 140px);
+        font-weight: 800;
+        letter-spacing: 0.11em;
+        color: rgb(25 35 31 / 6%);
+        text-transform: uppercase;
+        pointer-events: none;
+        transform: rotate(-28deg);
+      }
+
+      .viewer-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .viewer-badge {
+        padding: 9px 12px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.7);
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 16px 12px;
+        }
+
+        .viewer-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .cert-image-wrap {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="viewer-shell">
+      <div class="viewer-header">
+        <h1 id="viewer-title">Certificate viewer</h1>
+        <a href="index.html#certificates">← Back to certificates</a>
+      </div>
+
+      <div class="viewer-stage" aria-live="polite">
+        <div class="cert-image-wrap">
+          <div class="watermark">View only</div>
+          <img
+            id="cert-image"
+            class="cert-image"
+            alt="Certificate preview"
+            src="certificate_CION-7098.png"
+            draggable="false"
+          >
+        </div>
+      </div>
+
+      <div class="viewer-badges">
+        <span class="viewer-badge">Read-only</span>
+        <span class="viewer-badge">No direct download</span>
+        <span class="viewer-badge">Protected viewing</span>
+      </div>
+    </div>
+
+    <script>
+      const certMap = {
+        '7098': {
+          title: 'Web Design Certificate — 7098',
+          src: 'certificate_CION-7098.png'
+        },
+        '13750': {
+          title: 'CCNA Certificate — 13750',
+          src: 'certificate_CION-13750.png'
+        }
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const key = params.get('certificate') || '7098';
+      const cert = certMap[key] || certMap['7098'];
+      const image = document.getElementById('cert-image');
+      const title = document.getElementById('viewer-title');
+
+      if (image) {
+        image.src = cert.src;
+        image.alt = cert.title;
+      }
+
+      if (title) {
+        title.textContent = cert.title;
+      }
+
+      document.addEventListener('contextmenu', (event) => event.preventDefault());
+      document.addEventListener('dragstart', (event) => event.preventDefault());
+      document.addEventListener('selectstart', (event) => event.preventDefault());
+
+      document.addEventListener('keydown', (event) => {
+        const blocked = [
+          'PrintScreen',
+          's',
+          'S',
+          'p',
+          'P',
+          'c',
+          'C',
+          'u',
+          'U'
+        ];
+
+        if (
+          event.key === 'PrintScreen' ||
+          event.key === 'F12' ||
+          blocked.includes(event.key) && (event.ctrlKey || event.metaKey)
+        ) {
+          event.preventDefault();
+        }
+      });
+
+      window.addEventListener('beforeprint', (event) => {
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

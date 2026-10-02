@@ -499,6 +499,78 @@ p {
   font-size: clamp(37px, 4.5vw, 49px);
 }
 
+.certification-section {
+  padding-top: 75px;
+  padding-bottom: 48px;
+}
+
+.certification-section h2 {
+  margin: 0 0 28px;
+  font-family: var(--display);
+  font-size: clamp(52px, 7vw, 118px);
+  font-weight: 600;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+}
+
+.certification-card {
+  display: block;
+  padding: 28px 0 18px;
+  border-top: 1px solid #d2d7c9;
+}
+
+.certificate-tag {
+  display: block;
+  margin-bottom: 24px;
+  color: #7a8578;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.certification-card h3 {
+  margin: 0 0 18px;
+  font-family: var(--display);
+  font-size: clamp(31px, 4vw, 54px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+}
+
+.certificate-description {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 18px;
+  border: 3px solid #ff1d1d;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 26px 26px 22px;
+}
+
+.certificate-description p {
+  margin: 0;
+  color: #1d2722;
+  font-size: clamp(18px, 2vw, 34px);
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+}
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1d2722;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: opacity 150ms ease;
+}
+
+.certificate-link:hover {
+  opacity: 0.75;
+}
+
 .resource-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1160,6 +1232,10 @@ p {
     gap: 48px;
   }
 
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
   .resource-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1328,6 +1404,10 @@ p {
   .project-grid {
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  .certification-card {
+    padding: 20px 18px 18px;
   }
 
   .resource-inner {
