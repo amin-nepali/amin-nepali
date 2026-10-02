@@ -2,14 +2,13 @@
 
 # Hi, I'm Amin Nepali 👋
 
-### Full-Stack Developer | Python & Django Enthusiast | Vibe coder
+### Geek Developer | Networking Enthusiast | Vibe coder
 
 I build practical web experiences and enjoy turning problems into clean, maintainable software.
 
-📍 Belbari-9, Morang, Nepal · 🎓 Bachelor's graduate
+📍 Belbari-9, Morang, Nepal · 🎓 Bachelor's Dropout
 
 <a href="https://aminnepali.com.np">🌐 Website</a> ·
-<a href="https://orcid.org/0009-0007-9135-6166">🔬 ORCID</a>
 
 <a href="https://www.linkedin.com/in/amin-nepali-84664419b">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect with Amin on LinkedIn">
