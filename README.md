@@ -2,7 +2,7 @@
 
 # Hi, I'm Amin Nepali 👋
 
-### Geek Developer | Networking Enthusiast | Vibe coder
+### Geek Developer | Networking Enthusiast | Vibe coder 
 
 I build practical web experiences and enjoy turning problems into clean, maintainable software.
 
