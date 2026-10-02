@@ -2,7 +2,7 @@
 
 # Hey, I'm Amin Nepali 👋
 
-### Developer · Python & Django · Networking
+### Geek Developer | Networking Enthusiast | Vibe coder 
 
 I like turning practical problems into thoughtful web experiences — from the first interface to the systems behind it.
 
