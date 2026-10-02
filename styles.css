@@ -314,15 +314,16 @@ p {
   opacity: 0.77;
 }
 
-.hero-monogram {
+.profile-photo {
   position: relative;
-  color: #263329;
-  font-family: var(--display);
-  font-size: clamp(104px, 15vw, 178px);
-  font-weight: 800;
-  letter-spacing: -0.13em;
-  line-height: 1;
-  transform: translate(-9px, -4px);
+  z-index: 0;
+  width: min(68%, 300px);
+  height: 335px;
+  border: 5px solid rgb(245 245 240 / 75%);
+  border-radius: 48% 48% 4px 4px;
+  object-fit: cover;
+  object-position: center 31%;
+  box-shadow: 0 18px 48px rgb(36 45 35 / 16%);
 }
 
 .orbit {
@@ -346,6 +347,7 @@ p {
 
 .art-note {
   position: absolute;
+  z-index: 1;
   display: flex;
   align-items: center;
   background: rgb(245 245 240 / 92%);
@@ -1027,6 +1029,11 @@ p {
     height: 190px;
   }
 
+  .profile-photo {
+    width: min(72%, 270px);
+    height: 285px;
+  }
+
   .orbit-one {
     width: 315px;
     height: 155px;
@@ -1169,6 +1176,11 @@ p {
 
   .hero-art {
     min-height: 320px;
+  }
+
+  .profile-photo {
+    width: min(73%, 260px);
+    height: 270px;
   }
 
   .hero-scroll {
