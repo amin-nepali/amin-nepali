@@ -2,7 +2,7 @@
   "id": "/network-lab.html",
   "name": "Amin Nepali Network Lab",
   "short_name": "Network Lab",
-  "description": "Offline CCNA topology and command practice for Windows PCs.",
+  "description": "Offline CCNA topology and command practice on desktop and mobile.",
   "start_url": "/network-lab.html",
   "scope": "/",
   "display": "standalone",

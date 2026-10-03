@@ -42,7 +42,6 @@ const cliInterfaceName = ref("");
 const cliContext = ref<CliContext>({ mode: "user" });
 const isDragging = ref(false);
 const canvas = ref<HTMLElement | null>(null);
-const isWindowsDesktop = ref(false);
 const isOnline = ref(navigator.onLine);
 const isInstalled = ref(window.matchMedia("(display-mode: standalone)").matches);
 const installAvailable = ref(false);
@@ -184,7 +183,7 @@ function restoreLocalState() {
       : state.value.devices[0]?.id ?? "";
     sourceId.value = state.value.devices.find((device) => isHostDevice(device.kind) && device.kind !== "cloud")?.id ?? "";
     localSaveReady.value = true;
-    storageMessage.value = "Saved topology restored from this PC.";
+    storageMessage.value = "Saved topology restored from this device.";
     setStatus(storageMessage.value, "success");
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown local-storage error.";
@@ -195,14 +194,14 @@ function restoreLocalState() {
 }
 
 function saveLocalState() {
-  if (!localSaveReady.value || !isWindowsDesktop.value) return;
+  if (!localSaveReady.value) return;
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       version: 1,
       network: state.value,
       selectedDeviceId: selectedDeviceId.value,
     }));
-    storageMessage.value = "Saved on this PC.";
+    storageMessage.value = "Saved on this device.";
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown local-storage error.";
     storageMessage.value = `Could not save topology locally: ${message}`;
@@ -212,13 +211,13 @@ function saveLocalState() {
 
 async function installAsApp() {
   if (!installPromptEvent) {
-    setStatus("In Microsoft Edge or Chrome, use the browser menu → Apps → Install this site as an app.", "info");
+    setStatus("Use your browser menu to install Network Lab or add it to your home screen.", "info");
     return;
   }
   try {
     await installPromptEvent.prompt();
     const result = await installPromptEvent.userChoice;
-    if (result.outcome === "accepted") setStatus("Network Lab installed as a Windows app.", "success");
+    if (result.outcome === "accepted") setStatus("Network Lab installed as an app.", "success");
     installPromptEvent = null;
     installAvailable.value = false;
   } catch (error) {
@@ -229,7 +228,7 @@ async function installAsApp() {
 
 async function registerOfflineSupport() {
   if (!("serviceWorker" in navigator)) {
-    setStatus("This Windows browser does not support offline app storage.", "error");
+    setStatus("This browser does not support offline app storage.", "error");
     return;
   }
   try {
@@ -265,7 +264,7 @@ async function registerOfflineSupport() {
         [channel.port2],
       );
     });
-    setStatus("Offline app ready · resources are cached on this PC.", "success");
+    setStatus("Offline app ready · resources are cached on this device.", "success");
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown service-worker error.";
     setStatus(`Offline support could not be enabled: ${message}`, "error");
@@ -293,11 +292,6 @@ function onOffline() {
 }
 
 onMounted(() => {
-  isWindowsDesktop.value =
-    /^win/i.test(navigator.platform) &&
-    !window.matchMedia("(pointer: coarse)").matches &&
-    window.innerWidth >= 1024;
-  if (!isWindowsDesktop.value) return;
   restoreLocalState();
   void registerOfflineSupport();
   window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
@@ -576,11 +570,12 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="netlab">
-    <section v-if="!isWindowsDesktop" class="platform-gate" role="dialog" aria-modal="true">
-      <span class="brand-mark" aria-hidden="true">A</span>
-      <p class="eyebrow">WINDOWS DESKTOP APP</p>
-      <h1>Network Lab is for Windows PCs.</h1>
-      <p>Open this page in Microsoft Edge or Chrome on a Windows desktop or laptop. Mobile devices and other operating systems are not supported.</p>
+    <section class="landscape-gate" role="dialog" aria-modal="true" aria-labelledby="landscape-title">
+      <span class="rotate-device" aria-hidden="true"><span></span><i>↻</i></span>
+      <p class="eyebrow">NETWORK LAB</p>
+      <h2 id="landscape-title">Rotate your phone</h2>
+      <p>Turn your phone sideways to use the full networking lab in landscape mode.</p>
+      <small>The lab will be ready as soon as your screen is landscape.</small>
     </section>
     <header class="lab-header">
       <a class="lab-brand" href="/" aria-label="Return to Amin Nepali's portfolio">

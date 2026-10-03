@@ -792,23 +792,6 @@ body { min-width: 0; }
 .guide-command { margin-top: 5px; padding: 5px 0; font-size: 8px; }
 .board-footer { min-height: 25px; flex: 0 0 25px; padding: 0 9px; font-size: 7px; }
 .board-footer > span:first-child i { width: 4px; height: 4px; }
-.platform-gate {
-  position: fixed;
-  z-index: 2000;
-  inset: 0;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  gap: 12px;
-  padding: 24px;
-  background: #080b10;
-  color: var(--lab-text);
-  text-align: center;
-}
-.platform-gate .brand-mark { width: 42px; height: 42px; font-size: 21px; }
-.platform-gate .eyebrow { margin: 4px 0 0; }
-.platform-gate h1 { max-width: 520px; margin: 0; font-size: clamp(24px, 4vw, 38px); }
-.platform-gate p:last-child { max-width: 470px; margin: 0; color: #9aa7b2; font-size: 14px; line-height: 1.6; }
 @media (max-height: 720px) {
   .lab-header { min-height: 42px; flex-basis: 42px; }
   .lab-main { padding-block: 4px; }
@@ -819,4 +802,22 @@ body { min-width: 0; }
   .inspector-tabs { height: 32px; }
   .inspector { grid-template-rows: 32px minmax(0, 1fr); }
   .board-footer { min-height: 21px; flex-basis: 21px; }
+}
+
+@media (pointer: coarse) and (max-width: 900px) and (orientation: landscape) {
+  .lab-header { min-height: 44px; flex-basis: 44px; padding-inline: 10px; }
+  .lab-main { padding: 4px; }
+  .lab-grid { grid-template-columns: minmax(0, 1fr) clamp(250px, 36vw, 320px); }
+  .save-indicator { max-width: 140px; }
+  .secondary-button { min-height: 32px; }
+  .device-picker > summary, .connect-button { min-height: 33px; }
+  .inspector-tabs { height: 40px; }
+  .inspector { grid-template-rows: 40px minmax(0, 1fr); }
+}
+
+@media (pointer: coarse) and (max-width: 700px) and (orientation: landscape) {
+  .header-status .save-indicator { display: none; }
+  .header-status { font-size: 7px; }
+  .header-actions { gap: 4px; }
+  .install-button, .back-link { min-height: 30px; padding-inline: 7px; font-size: 8px; }
 }
