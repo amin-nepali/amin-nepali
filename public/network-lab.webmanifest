@@ -1,0 +1,32 @@
+{
+  "id": "/network-lab.html",
+  "name": "Amin Nepali Network Lab",
+  "short_name": "Network Lab",
+  "description": "Offline CCNA topology and command practice for Windows PCs.",
+  "start_url": "/network-lab.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080b10",
+  "theme_color": "#080b10",
+  "categories": ["education", "utilities"],
+  "icons": [
+    {
+      "src": "/network-lab-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/network-lab-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/network-lab-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -2867,7 +2867,7 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   html {
     scroll-padding-top: 76px;
   }
@@ -2991,6 +2991,7 @@ button:focus-visible {
   .primary-navigation.is-open > a:nth-child(4) { animation-delay: 75ms; }
   .primary-navigation.is-open > a:nth-child(5) { animation-delay: 100ms; }
   .primary-navigation.is-open > a:nth-child(6) { animation-delay: 125ms; }
+  .primary-navigation.is-open > a:nth-child(7) { animation-delay: 150ms; }
 }
 
 @keyframes nav-mark-orbit {

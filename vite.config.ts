@@ -15,6 +15,7 @@ export default defineConfig({
         main: fileURLToPath(new URL("./index.html", import.meta.url)),
         amin: fileURLToPath(new URL("./amin.html", import.meta.url)),
         certificateViewer: fileURLToPath(new URL("./certificate-viewer.html", import.meta.url)),
+        networkLab: fileURLToPath(new URL("./network-lab.html", import.meta.url)),
       },
     },
   },
