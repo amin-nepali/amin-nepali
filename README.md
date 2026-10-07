@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="image.png" alt="Amin Nepali" width="160" height="160" style="border-radius: 50%; object-fit: cover; margin-bottom: 12px;">
+
 # Hey, I'm Amin Nepali 👋
 
 ### Geek Developer | Networking Enthusiast 
