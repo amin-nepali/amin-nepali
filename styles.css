@@ -2167,10 +2167,78 @@ button:focus-visible {
   line-height: 1.6;
 }
 
+.project-stack {
+  display: grid;
+  gap: 9px;
+  margin: 0 0 15px;
+}
+
+.project-stack-group {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+}
+
+.project-stack-label {
+  padding-top: 4px;
+  color: var(--project-accent);
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.project-stack-tags span {
+  padding: 4px 6px;
+  border: 1px solid #2c3741;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 2%);
+  color: #b5c0ca;
+  font-family: var(--mono);
+  font-size: 8px;
+  line-height: 1.2;
+}
+
+.project-stack-note {
+  grid-column: 2;
+  margin-top: -4px;
+  color: #84919d;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
 .project-footer {
   margin-top: auto;
   border-top-color: #222d38;
   padding-top: 10px;
+}
+
+.project-footer .project-demo,
+.project-footer .project-repository {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+}
+
+.project-footer .project-demo {
+  color: #aab6c1;
+}
+
+.project-footer .project-repository {
+  color: #e3edda;
+}
+
+.project-footer .project-demo span,
+.project-footer .project-repository span {
+  color: var(--project-accent);
 }
 
 .project-status {
@@ -2716,6 +2784,10 @@ button:focus-visible {
   font-weight: 700;
 }
 
+.cv-project-heading h5 {
+  font-size: 12px;
+}
+
 .cv-skill-card p {
   margin: 7px 0 0;
   color: #929eaa;
@@ -2769,6 +2841,35 @@ button:focus-visible {
   color: #d5e7b1;
   font-size: 9px;
   transition: color 160ms ease;
+}
+
+.cv-project-stack {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.cv-project-stack > div {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 8px;
+}
+
+.cv-project-stack > div > span {
+  padding-top: 1px;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cv-project-stack > div > p {
+  margin: 0;
+  color: #a4b0ba;
+  font-family: var(--mono);
+  font-size: 8px;
+  line-height: 1.5;
 }
 
 .cv-project > a span,
