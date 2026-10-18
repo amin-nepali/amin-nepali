@@ -1,8 +1,12 @@
 <div align="center">
 
+<img src="725c95f096a3fc84295f38bf4cb85754.jpeg" alt="Amin Nepali" width="160" height="160" style="border-radius: 50%; object-fit: cover; margin-bottom: 12px;">
+
 # Hey, I'm Amin Nepali 👋
 
-### Geek Developer | Networking Enthusiast | Vibe coder 
+### Geek Developer | Networking Enthusiast 
+
+### FULL STACK VIBE CODER
 
 I like turning practical problems into thoughtful web experiences — from the first interface to the systems behind it.
 
