@@ -1,0 +1,117 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 7 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 8 0 R >>
+endobj
+7 0 obj
+<< /Length 3566 >>
+stream
+0.470 0.680 0.240 rg 48 744 36 4 re f
+BT /F2 27 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 707 Tm (Amin Nepali) Tj ET
+BT /F2 10 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 686 Tm (FULL-STACK DEVELOPER  |  NETWORKING ENTHUSIAST) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 664 Tm (Belbari, Morang, Nepal  |  aminnepali.com.np  |  github.com/amin-nepali) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 649 Tm (linkedin.com/in/amin-nepali-84664419b) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 635 m 564 635 l S
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 615 Tm (PROFILE) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 607 m 564 607 l S
+BT /F1 9 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 591 Tm (I build practical web applications and thoughtful interfaces, with a foundation in Python, Django, and) Tj ET
+BT /F1 9 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 578 Tm (modern frontend development. I also enjoy networking, automation, and solving real-world technical) Tj ET
+BT /F1 9 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 565 Tm (problems.) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 548 Tm (TECHNICAL TOOLKIT) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 540 m 564 540 l S
+BT /F2 9 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 526 Tm (Programming) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 513 Tm (Python \(OOP, data structures\), Java, C++, TypeScript, JavaScript \(ES6+\), C# / VB.NET) Tj ET
+BT /F2 9 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 505 Tm (Web ecosystem) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 492 Tm (Django \(MVT, ORM, REST APIs\), HTML5, CSS3, Tailwind CSS, DOM manipulation) Tj ET
+BT /F2 9 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 484 Tm (Networking and infrastructure) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 471 Tm (CCNA core, subnetting, OSPF, VLANs, NAT, DHCP, port security, GNS3, Packet Tracer) Tj ET
+BT /F2 9 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 463 Tm (Databases and tools) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 450 Tm (MySQL, MongoDB, SQLite, Git, GitHub, VS Code, Android Studio, cPanel hosting) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 438 Tm (SELECTED ENGINEERING PROJECTS) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 430 m 564 430 l S
+BT /F2 9.5 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 412 Tm (Campus Management System) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 377 412 Tm (Python and TypeScript) Tj ET
+BT /F1 8 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 399 Tm (A role-based application coordinating workflows for students, teachers, parents, and administrators.) Tj ET
+BT /F1 7.5 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 388 Tm (github.com/amin-nepali/campus-management-system) Tj ET
+BT /F2 9.5 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 370 Tm (CFAM \(Call Family\)) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 377 370 Tm (React and TypeScript) Tj ET
+BT /F1 8 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 357 Tm (A communication app concept for private chat, image sharing, and voice or video calls.) Tj ET
+BT /F1 7.5 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 346 Tm (github.com/amin-nepali/CFAM) Tj ET
+BT /F2 9.5 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 328 Tm (OmniMail Central) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 377 328 Tm (JavaScript and Firebase) Tj ET
+BT /F1 8 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 315 Tm (A unified inbox dashboard concept for bringing notifications from multiple accounts together.) Tj ET
+BT /F1 7.5 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 304 Tm (github.com/amin-nepali/omnimail-central) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 35 Tm (AMIN NEPALI  |  CURRICULUM VITAE) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 504 35 Tm (PAGE 1 OF 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Length 3095 >>
+stream
+0.470 0.680 0.240 rg 48 744 36 4 re f
+BT /F2 25 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 707 Tm (Experience & credentials) Tj ET
+BT /F1 9 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 683 Tm (Teaching, technical training, and verified certificates) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 649 Tm (EXPERIENCE AND TRAINING) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 641 m 564 641 l S
+BT /F2 11 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 623 Tm (Computer Science Teacher) Tj ET
+BT /F1 8 Tf 0.340 0.400 0.460 rg 1 0 0 1 390 623 Tm (Morang, Nepal) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 607 Tm (Dangihat Little Buddha Boarding School) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 589 Tm (Introduced students to computer architecture, computing fundamentals, and introductory programming.) Tj ET
+BT /F2 11 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 555 Tm (Web Development Trainee) Tj ET
+BT /F1 8 Tf 0.340 0.400 0.460 rg 1 0 0 1 390 555 Tm (Academic training) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 539 Tm (Sukuna Multiple Campus | Django course) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 521 Tm (Completed technical coursework in Django Model-View-Template architecture and web application) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 509 Tm (development.) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 473 Tm (VERIFIED CERTIFICATIONS) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 465 m 564 465 l S
+BT /F2 10 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 445 Tm (CCNA Certification) Tj ET
+BT /F1 8 Tf 0.470 0.680 0.240 rg 1 0 0 1 398 445 Tm (Verification ID 13750) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 429 Tm (Foundational routing, switching, IP connectivity, and security infrastructure.) Tj ET
+BT /F2 10 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 403 Tm (Web Design Certificate) Tj ET
+BT /F1 8 Tf 0.470 0.680 0.240 rg 1 0 0 1 398 403 Tm (Verification ID 7098) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 387 Tm (Practical learning in visual hierarchy, user experience, and responsive layouts.) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 359 Tm (EDUCATION AND INTERESTS) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 351 m 564 351 l S
+BT /F2 10 Tf 0.100 0.140 0.180 rg 1 0 0 1 48 334 Tm (Sukuna Multiple Campus) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 317 Tm (Bachelor's graduate. Interested in problem-solving, web applications, object-oriented programming,) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 305 Tm (networking, and learning by building.) Tj ET
+BT /F2 9 Tf 0.470 0.680 0.240 rg 1 0 0 1 48 281 Tm (CONTACT & LINKS) Tj ET
+0.470 0.680 0.240 RG 1.4 w 48 273 m 564 273 l S
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 255 Tm (Portfolio: https://aminnepali.com.np) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 241 Tm (GitHub: https://github.com/amin-nepali) Tj ET
+BT /F1 8.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 227 Tm (LinkedIn: https://www.linkedin.com/in/amin-nepali-84664419b) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 48 35 Tm (AMIN NEPALI  |  CURRICULUM VITAE) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.460 rg 1 0 0 1 504 35 Tm (PAGE 2 OF 2) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000263 00000 n 
+0000000360 00000 n 
+0000000462 00000 n 
+0000000598 00000 n 
+0000004215 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7361
+%%EOF
