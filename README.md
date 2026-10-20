@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="725c95f096a3fc84295f38bf4cb85754.jpeg" alt="Amin Nepali" width="160" height="160" style="border-radius: 50%; object-fit: cover; margin-bottom: 12px;">
+<img src="profile-photo.jpg" alt="Portrait of Amin Nepali" width="160" height="160" style="border-radius: 50%; object-fit: cover; margin-bottom: 12px;">
 
 # Hey, I'm Amin Nepali 👋
 
-### Geek Developer | Networking Enthusiast 
+### Full-Stack Developer in Nepal | Python · Django · React · TypeScript
 
-### FULL STACK VIBE CODER
-
-I like turning practical problems into thoughtful web experiences — from the first interface to the systems behind it.
+I build practical web applications, dashboards, communication tools, and education platforms for real-world needs. I’m also a networking enthusiast with a foundation in CCNA concepts, TCP/IP, VLANs, OSPF, NAT, and DHCP.
 
 📍 Belbari, Morang, Nepal &nbsp;·&nbsp; 🎓 Sukuna Multiple Campus
 
@@ -20,6 +18,9 @@ I like turning practical problems into thoughtful web experiences — from the f
 </a>
 <a href="https://github.com/amin-nepali">
   <img src="https://img.shields.io/badge/GitHub-Follow%20my%20work-181717?style=for-the-badge&logo=github&logoColor=white" alt="Amin's GitHub profile">
+</a>
+<a href="mailto:aminnepali7@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact%20Amin-4B6B3C?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Amin Nepali">
 </a>
 
 <br>
@@ -43,7 +44,7 @@ I like turning practical problems into thoughtful web experiences — from the f
 ## Toolkit
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,django,html,css,tailwindcss,js,mysql,java,cpp,git,github,vscode" alt="Python, Django, HTML, CSS, Tailwind CSS, JavaScript, MySQL, Java, C++, Git, GitHub, and VS Code">
+  <img src="https://skillicons.dev/icons?i=python,django,react,typescript,firebase,html,css,tailwindcss,js,mysql,java,cpp,git,github,vscode" alt="Python, Django, React, TypeScript, Firebase, HTML, CSS, Tailwind CSS, JavaScript, MySQL, Java, C++, Git, GitHub, and VS Code">
 </div>
 
 <details>
